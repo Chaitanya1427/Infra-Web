@@ -1,0 +1,147 @@
+/* Custom styles for INFRA website */
+:root {
+  --infra-dark: #1a1a1a;
+  --infra-navy: #0f1419;
+  --infra-gold: #d4af37;
+  --infra-steel: #6b7280;
+  --infra-white: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--infra-dark);
+  color: var(--infra-white);
+}
+
+/* Home page background only */
+.hero-bg {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      rgba(3, 20, 40, 0.75),
+      rgba(3, 20, 40, 0.85)
+    ),
+    url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Ensure proper section stacking */
+section {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Navigation stays on top */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keep for hero effect, but ensure section positioning */
+  position: relative;
+  z-index: 1;
+}
+
+.parallax {
+  /* Removed background-attachment: fixed to prevent stacking issues */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.btn-gold {
+  background-color: var(--infra-gold);
+  color: var(--infra-dark);
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #b8941f;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid var(--infra-gold);
+  color: var(--infra-gold);
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--infra-gold);
+  color: var(--infra-dark);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure images stay within containers */
+.card img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent image overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.section-padding {
+  padding: 80px 0;
+  margin-bottom: 0; /* Ensure no negative margins */
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 40px 0;
+  }
+}
+
+/* Ensure sections don't overlap */
+section + section {
+  margin-top: 0; /* Reset any default margins */
+}

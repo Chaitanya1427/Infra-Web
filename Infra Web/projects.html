@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - INFRA | Portfolio of Infrastructure Excellence</title>
+  <meta name="description" content="Explore INFRA's portfolio of landmark infrastructure projects: highways, bridges, smart cities, and commercial developments across India and internationally.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="index.html" class="text-2xl font-bold text-yellow-500">INFRA</a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="index.html" class="text-white hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+            <a href="about.html" class="text-white hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">About Us</a>
+            <a href="services.html" class="text-white hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+            <a href="projects.html" class="text-yellow-500 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+            <a href="sustainability.html" class="text-white hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Sustainability</a>
+            <a href="clients.html" class="text-white hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Clients</a>
+            <a href="careers.html" class="text-white hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Careers</a>
+            <a href="contact.html" class="text-white hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 bg-gradient-to-br from-gray-900 to-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-on-scroll">Our Projects</h1>
+        <p class="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto animate-on-scroll">A showcase of infrastructure excellence, demonstrating our commitment to engineering marvels that shape nations and drive progress.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="py-8 bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="filter-btn active bg-yellow-500 text-gray-900 px-6 py-2 rounded-full font-medium transition-colors" data-filter="all">All Projects</button>
+        <button class="filter-btn bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 px-6 py-2 rounded-full font-medium transition-colors" data-filter="roads">Roads & Highways</button>
+        <button class="filter-btn bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 px-6 py-2 rounded-full font-medium transition-colors" data-filter="bridges">Bridges & Flyovers</button>
+        <button class="filter-btn bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 px-6 py-2 rounded-full font-medium transition-colors" data-filter="smart-cities">Smart Cities</button>
+        <button class="filter-btn bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 px-6 py-2 rounded-full font-medium transition-colors" data-filter="commercial">Commercial</button>
+        <button class="filter-btn bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 px-6 py-2 rounded-full font-medium transition-colors" data-filter="industrial">Industrial</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        <!-- Expressway Corridor -->
+        <div class="project-card card overflow-hidden hover-lift animate-on-scroll" data-category="roads">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Expressway Corridor" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div class="text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Expressway Corridor</h3>
+                <p class="text-sm">Mumbai, India</p>
+                <p class="text-sm mt-2">150km high-speed corridor with advanced traffic management</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Expressway Corridor</h3>
+            <p class="text-gray-300 mb-2">Mumbai, India</p>
+            <p class="text-sm text-gray-400">A 150km high-speed corridor connecting major metropolitan areas, featuring advanced traffic management systems and sustainable design principles.</p>
+            <span class="inline-block bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full mt-3">Roads & Highways</span>
+          </div>
+        </div>
+
+        <!-- Signature Bridge -->
+        <div class="project-card card overflow-hidden hover-lift animate-on-scroll" data-category="bridges">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Signature Bridge" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div class="text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Signature Bridge</h3>
+                <p class="text-sm">Delhi, India</p>
+                <p class="text-sm mt-2">1.2km architectural marvel with smart monitoring</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Signature Bridge</h3>
+            <p class="text-gray-300 mb-2">Delhi, India</p>
+            <p class="text-sm text-gray-400">An architectural marvel spanning 1.2km, incorporating smart lighting and structural health monitoring systems for long-term durability.</p>
+            <span class="inline-block bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full mt-3">Bridges & Flyovers</span>
+          </div>
+        </div>
+
+        <!-- Smart District Hub -->
+        <div class="project-card card overflow-hidden hover-lift animate-on-scroll" data-category="smart-cities">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Smart District Hub" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div class="text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Smart District Hub</h3>
+                <p class="text-sm">Bangalore, India</p>
+                <p class="text-sm mt-2">500-acre IoT-enabled integrated development</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Smart District Hub</h3>
+            <p class="text-gray-300 mb-2">Bangalore, India</p>
+            <p class="text-sm text-gray-400">A 500-acre integrated development featuring IoT-enabled infrastructure, renewable energy solutions, and intelligent transportation systems.</p>
+            <span class="inline-block bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full mt-3">Smart Cities</span>
+          </div>
+        </div>
+
+        <!-- Metro Commercial Complex -->
+        <div class="project-card card overflow-hidden hover-lift animate-on-scroll" data-category="commercial">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Metro Commercial Complex" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div class="text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Metro Commercial Complex</h3>
+                <p class="text-sm">Chennai, India</p>
+                <p class="text-sm mt-2">Premium office and retail development</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Metro Commercial Complex</h3>
+            <p class="text-gray-300 mb-2">Chennai, India</p>
+            <p class="text-sm text-gray-400">A premium commercial complex featuring sustainable design, smart building systems, and integrated transportation connectivity.</p>
+            <span class="inline-block bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full mt-3">Commercial</span>
+          </div>
+        </div>
+
+        <!-- Industrial Park Alpha -->
+        <div class="project-card card overflow-hidden hover-lift animate-on-scroll" data-category="industrial">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Industrial Park Alpha" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div class="text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Industrial Park Alpha</h3>
+                <p class="text-sm">Ahmedabad, India</p>
+                <p class="text-sm mt-2">Advanced manufacturing and logistics hub</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Industrial Park Alpha</h3>
+            <p class="text-gray-300 mb-2">Ahmedabad, India</p>
+            <p class="text-sm text-gray-400">A state-of-the-art industrial park with advanced manufacturing facilities, automated logistics systems, and sustainable energy solutions.</p>
+            <span class="inline-block bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full mt-3">Industrial</span>
+          </div>
+        </div>
+
+        <!-- Coastal Highway -->
+        <div class="project-card card overflow-hidden hover-lift animate-on-scroll" data-category="roads">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Coastal Highway" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div class="text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Coastal Highway</h3>
+                <p class="text-sm">Goa, India</p>
+                <p class="text-sm mt-2">Scenic coastal corridor with environmental safeguards</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Coastal Highway</h3>
+            <p class="text-gray-300 mb-2">Goa, India</p>
+            <p class="text-sm text-gray-400">A scenic coastal highway featuring advanced environmental safeguards, wildlife corridors, and sustainable tourism infrastructure.</p>
+            <span class="inline-block bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full mt-3">Roads & Highways</span>
+          </div>
+        </div>
+
+        <!-- River Crossing Bridge -->
+        <div class="project-card card overflow-hidden hover-lift animate-on-scroll" data-category="bridges">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="River Crossing Bridge" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div class="text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">River Crossing Bridge</h3>
+                <p class="text-sm">Kolkata, India</p>
+                <p class="text-sm mt-2">Cable-stayed bridge over major river system</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">River Crossing Bridge</h3>
+            <p class="text-gray-300 mb-2">Kolkata, India</p>
+            <p class="text-sm text-gray-400">A cable-stayed bridge spanning a major river system, featuring seismic-resistant design and integrated flood management systems.</p>
+            <span class="inline-block bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full mt-3">Bridges & Flyovers</span>
+          </div>
+        </div>
+
+        <!-- Tech Innovation District -->
+        <div class="project-card card overflow-hidden hover-lift animate-on-scroll" data-category="smart-cities">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Tech Innovation District" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div class="text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-xl font-bold mb-2">Tech Innovation District</h3>
+                <p class="text-sm">Hyderabad, India</p>
+                <p class="text-sm mt-2">AI-powered smart district with autonomous systems</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Tech Innovation District</h3>
+            <p class="text-gray-300 mb-2">Hyderabad, India</p>
+            <p class="text-sm text-gray-400">An AI-powered smart district featuring autonomous transportation systems, predictive maintenance, and integrated renewable energy networks.</p>
+            <span class="inline-block bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full mt-3">Smart Cities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-r from-yellow-500 to-yellow-600">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-on-scroll">Have a Vision to Build?</h2>
+      <p class="text-xl text-gray-800 mb-8 animate-on-scroll">Let's collaborate on your next infrastructure project and create something extraordinary.</p>
+      <a href="contact.html" class="btn-gold bg-gray-900 text-yellow-500 hover:bg-gray-800">Start Your Project</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 border-t border-gray-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-2xl font-bold text-yellow-500 mb-4">INFRA</div>
+          <p class="text-gray-300 mb-4">Building the future of modern infrastructure with excellence, innovation, and sustainability.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Services</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="services.html#roads" class="hover:text-yellow-500 transition-colors">Roads & Highways</a></li>
+            <li><a href="services.html#bridges" class="hover:text-yellow-500 transition-colors">Bridges & Flyovers</a></li>
+            <li><a href="services.html#smart-cities" class="hover:text-yellow-500 transition-colors">Smart City Projects</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Company</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="about.html" class="hover:text-yellow-500 transition-colors">About Us</a></li>
+            <li><a href="projects.html" class="hover:text-yellow-500 transition-colors">Projects</a></li>
+            <li><a href="careers.html" class="hover:text-yellow-500 transition-colors">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <div class="text-gray-300">
+            <p>New Delhi, India<br>Phone: +91 11 1234 5678<br>Email: info@infra.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 INFRA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Project filtering functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => {
+            btn.classList.remove('active', 'bg-yellow-500', 'text-gray-900');
+            btn.classList.add('bg-gray-700', 'text-white');
+          });
+
+          // Add active class to clicked button
+          button.classList.add('active', 'bg-yellow-500', 'text-gray-900');
+          button.classList.remove('bg-gray-700', 'text-white');
+
+          const filterValue = button.getAttribute('data-filter');
+
+          projectCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
